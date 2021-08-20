@@ -1,0 +1,68 @@
+@mixin fontStyle($font-size) {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #f0d7f8;
+    font-size: $font-size;
+    
+  }
+
+header {
+    display: flex !important;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: nav1;
+  }
+  
+  
+  
+  .main__menu {
+    $font-size: 4vh;
+    @include fontStyle($font-size);
+    display: flex !important;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+    color: black;
+    background-color: #f0d7f8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .main__menu li a {
+    display: block;
+    padding: 20px;
+  }
+  
+  .header__logo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+  }
+  
+  .header__logo img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .header__logo:hover {
+    cursor: pointer;
+  }
+  
+  .main__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    grid-area: search;
+  }
